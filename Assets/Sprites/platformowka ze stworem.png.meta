@@ -341,8 +341,8 @@ TextureImporter:
       name: platformowka ze stworem_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -362,8 +362,8 @@ TextureImporter:
       name: platformowka ze stworem_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -375,6 +375,48 @@ TextureImporter:
       bones: []
       spriteID: 7569cd61b9cd48c4bae75f231acc40a9
       internalID: 1804493950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformowka ze stworem_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cb267900c8a1c41a8ff3dcf57960d1
+      internalID: -1110659738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platformowka ze stworem_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ad9f4688b66ed4c8225c9260b5a77f
+      internalID: 1522769320
       vertices: []
       indices: 
       edges: []
@@ -395,11 +437,13 @@ TextureImporter:
       platformowka ze stworem_5: -87014259
       platformowka ze stworem_10: 357592699
       platformowka ze stworem_1: -1674932740
+      platformowka ze stworem_12: -1110659738
       platformowka ze stworem_9: -859979092
       platformowka ze stworem_2: 1197425602
       platformowka ze stworem_0: 1907806061
       platformowka ze stworem_8: 372348087
       platformowka ze stworem_6: 1657585398
+      platformowka ze stworem_13: 1522769320
       platformowka ze stworem_3: 606017479
       platformowka ze stworem_11: 1804493950
   spritePackingTag: 
