@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - EndOfSpawn
   layers:
   - Default
   - TransparentFX
@@ -11,13 +12,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Climbing
+  - Clouds
+  - Background
+  - Player
+  - BackgroundImageTrigger
+  - Bouncing
   - 
   - 
   - 
@@ -41,9 +42,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3056557765
+    locked: 0
   - name: Water
     uniqueID: 509581491
     locked: 0
+  - name: CloudsFar
+    uniqueID: 8313923
+    locked: 0
   - name: Platforms
     uniqueID: 623734775
+    locked: 0
+  - name: Obstacles
+    uniqueID: 44527571
+    locked: 0
+  - name: Climbing
+    uniqueID: 1189051741
+    locked: 0
+  - name: Player
+    uniqueID: 1186493867
+    locked: 0
+  - name: Clouds
+    uniqueID: 632194601
     locked: 0
