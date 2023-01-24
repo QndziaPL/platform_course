@@ -19,7 +19,7 @@ TagManager:
   - Player
   - BackgroundImageTrigger
   - Bouncing
-  - 
+  - Enemies
   - 
   - 
   - 
@@ -59,6 +59,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 1189051741
+    locked: 0
+  - name: Enemies
+    uniqueID: 1261190831
     locked: 0
   - name: Player
     uniqueID: 1186493867

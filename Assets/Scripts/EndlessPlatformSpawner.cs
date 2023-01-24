@@ -20,6 +20,8 @@ public class EndlessPlatformSpawner : MonoBehaviour
 
     Vector2 tempStartPointForSpawning = new Vector2(13, -15);
 
+    // List<Vector2Int> 
+
     // Vector2Int endOfLastSpawnedPlatform = TU ZACZĄĆ i na dole
 
 
