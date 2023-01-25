@@ -6,6 +6,8 @@ public class Fish : MonoBehaviour
 {
     Rigidbody2D myRigidbody;
     [SerializeField] float fishSpeed = 10f;
+    [SerializeField] float yThrowFactor  = 2f;
+
     [SerializeField] float timeToDestroy = 2f;
     PlayerMovement player;
     float xSpeed;
@@ -15,11 +17,13 @@ public class Fish : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>();
         xSpeed = player.transform.localScale.x * fishSpeed;
         StartCoroutine(SelfDestruct());
+        myRigidbody.velocity = new Vector2(xSpeed, yThrowFactor);
+
     }
 
     void Update()
     {
-        myRigidbody.velocity = new Vector2(xSpeed, 0f);
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
