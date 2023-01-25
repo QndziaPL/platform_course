@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - EndOfSpawn
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - BackgroundImageTrigger
   - Bouncing
   - Enemies
-  - 
-  - 
+  - Hazards
+  - Projectiles
   - 
   - 
   - 
@@ -59,6 +60,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 1189051741
+    locked: 0
+  - name: Hazards
+    uniqueID: 3012808817
     locked: 0
   - name: Enemies
     uniqueID: 1261190831

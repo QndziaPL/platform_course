@@ -18,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D myFeetCollider;
     float gravityScaleAtStart;
 
+
+    [SerializeField] GameObject fish;
+    [SerializeField] Transform gun;
+
     bool isAlive = true;
     void Start()
     {
@@ -39,6 +43,13 @@ public class PlayerMovement : MonoBehaviour
         MoveBackground();
         Die();
     }
+
+    void OnFire(InputValue value)
+    {
+        if (!isAlive) return;
+        Instantiate(fish, gun.position, transform.rotation);
+    }
+
 
     void OnMove(InputValue value)
     {
@@ -103,11 +114,15 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidbody.velocity = deathKick;
         }
     }
+
 }
+
+
+
