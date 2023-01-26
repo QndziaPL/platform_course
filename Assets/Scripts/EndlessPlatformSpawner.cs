@@ -27,6 +27,7 @@ public class EndlessPlatformSpawner : MonoBehaviour
 
     void Awake()
     {
+        return;
         grid = new GameObject("EndlessPlatformGrid").AddComponent<Grid>();
         grid.transform.position = new Vector2(tempStartPointForSpawning.x, tempStartPointForSpawning.y);
         tilemapInstance = Instantiate(tilemap, grid.transform.position, Quaternion.identity);

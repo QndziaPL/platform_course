@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D myFeetCollider;
     float gravityScaleAtStart;
 
+    Vector3 startingPoint;
+
 
     [SerializeField] GameObject fish;
     [SerializeField] Transform gun;
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
         gravityScaleAtStart = myRigidbody.gravityScale;
+        startingPoint = transform.position;
 
     }
 
@@ -117,9 +120,20 @@ public class PlayerMovement : MonoBehaviour
         if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
         {
             isAlive = false;
-            myAnimator.SetTrigger("Dying");
+            myAnimator.SetBool("isDead", true);
             myRigidbody.velocity = deathKick;
+            StartCoroutine(Restart());
         }
+    }
+
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(1f);
+        isAlive = true;
+        myAnimator.SetBool("isDead", false);
+        moveInput = new Vector2(0, 0);
+        myRigidbody.velocity = new Vector2(0, 0);
+        myRigidbody.transform.position = startingPoint;
     }
 
 }
