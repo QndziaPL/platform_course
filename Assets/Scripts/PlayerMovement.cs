@@ -122,7 +122,8 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetBool("isDead", true);
             myRigidbody.velocity = deathKick;
-            StartCoroutine(Restart());
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            // StartCoroutine(Restart());
         }
     }
 
