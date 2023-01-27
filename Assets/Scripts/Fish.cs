@@ -6,7 +6,7 @@ public class Fish : MonoBehaviour
 {
     Rigidbody2D myRigidbody;
     [SerializeField] float fishSpeed = 10f;
-    [SerializeField] float yThrowFactor  = 2f;
+    [SerializeField] float yThrowFactor = 2f;
 
     [SerializeField] float timeToDestroy = 2f;
     PlayerMovement player;
