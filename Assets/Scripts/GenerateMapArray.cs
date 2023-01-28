@@ -23,7 +23,7 @@ public static class GenerateMapArray
 
         for (int i = 0; i < map.GetLength(0); i++)
         {
-            Debug.Log(map[i, 0]);
+            // Debug.Log(map[i, 0]);
         }
         return map;
     }
