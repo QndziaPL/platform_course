@@ -16,6 +16,7 @@ public class Blob : MonoBehaviour
             if (alreadySplitted < maxSplits)
             {
                 CreateCloneOnDeath();
+                Destroy(gameObject);
             }
             else
             {
@@ -28,7 +29,8 @@ public class Blob : MonoBehaviour
     void CreateCloneOnDeath()
     {
         alreadySplitted++;
-        var instance = Instantiate(gameObject);
+        var instance = Instantiate(gameObject, transform, true);
+        instance.transform.localScale = new Vector3((maxSplits - alreadySplitted)/3,(maxSplits - alreadySplitted)/3);
         Blob blobInstance = instance.GetComponent<Blob>();
         blobInstance.alreadySplitted = alreadySplitted;
     }
